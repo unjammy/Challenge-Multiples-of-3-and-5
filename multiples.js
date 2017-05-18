@@ -11,17 +11,21 @@ exports.sumOfAMultiple = function( n ) {
   var leftside = 0;
   var rightside = 0;
 
-  for(var i = 2; i < n; i++){
-    if ( (i % 3) === 0 ){
-      leftside = leftside + i;
-    }
+  for(var i = 1; i < (n / 3); i++){
+
+      leftside = leftside + (i * 3);
+
   };
 
-  for(var j = 2; j < n; j++){
-    if( (j % 5) === 0 ){
-      rightside = rightside + j;
-    }
+  console.log(leftside);
+
+  for(var j = 1; j < (n / 5); j++){
+
+      rightside = rightside + (j * 5);
+
   };
+
+  console.log(rightside);
 
   sum = leftside + rightside;
 
