@@ -11,23 +11,19 @@ exports.sumOfAMultiple = function( n ) {
   var leftside = 0;
   var rightside = 0;
 
-  for(var i = 1; i < (n / 3); i++){
+  for(var i = 1; i < n ; i++){
 
-      leftside = leftside + (i * 3);
+    if( !(i%3) ){
+      sum = sum + i;
+    }
+    if( !(i%5) ){
+      sum = sum + i;
+    }
+    if( !(i%15) ){
+      sum = sum - i;
+    }
 
   };
-
-  console.log(leftside);
-
-  for(var j = 1; j < (n / 5); j++){
-
-      rightside = rightside + (j * 5);
-
-  };
-
-  console.log(rightside);
-
-  sum = leftside + rightside;
 
   return sum;
 };

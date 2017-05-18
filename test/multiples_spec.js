@@ -9,9 +9,9 @@ describe( 'Sum of a Multiple Function', function() {
     sum.should.equal( 23 );
   });
 
-  it( 'should return the value 2633 if given 100 as an argument', function() {
+  it( 'should return the value 2318 if given 100 as an argument', function() {
     var sum = multiples.sumOfAMultiple( 100 );
-    sum.should.equal( 2633 );
+    sum.should.equal( 2318 );
   });
 
   // when your tests pass, uncomment the next two and
