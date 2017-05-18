@@ -10,6 +10,8 @@ exports.sumOfAMultiple = function( n ) {
 
   var leftside = 0;
   var rightside = 0;
+  // var i declared outside so it doesnt repeat declarations on every iteration
+  // limit = array.length so it doesnt call array.length every iteration
 
   for(var i = 1; i < n ; i++){
 
@@ -24,6 +26,23 @@ exports.sumOfAMultiple = function( n ) {
     }
 
   };
+
+  /* Alternative Solution
+
+  var i = 0;
+  while (i < n){
+    if(i % 3 === 0 || i % 5 === 0){
+      sum += i;
+    }
+    i++;
+  }
+
+  // Loops are "blocking"
+  // For loop is preferred when you know how many items there are
+  // While loop is preferred when you don't
+
+  */
+
 
   return sum;
 };
