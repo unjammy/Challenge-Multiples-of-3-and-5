@@ -24,11 +24,11 @@ describe( 'Sum of a Multiple Function', function() {
     sum.should.equal( 233168 );
   });
 
-  it( 'should return the value 50005000 for if given 10000 as an argument', function() {
+  it( 'should return the value 23331668 for if given 10000 as an argument', function() {
     var sum = multiples.sumOfAMultiple(10000);
 
     // Change the argument given to .equal() to the correct number
-    sum.should.equal( 50005000 );
+    sum.should.equal( 23331668 );
   });
 
 
